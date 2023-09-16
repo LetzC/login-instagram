@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram | Login</title>
+  <link rel="shortcut icon" href="./imgs/icons8-instagram-32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="./imgs/instagram-logo.svg" alt="logo-instagram" id="logo-instagram">
+  </header>
+
+  <main>
+    <form>
+      <div id="login">
+        <input type="text" id="user-input" placeholder="Phone number, username or email address" required>
+        <div id="password">
+          <input type="password" id="password-input" placeholder="Password" required>
+          <img src="./imgs/eye-inactive.svg" alt="eye inactive" class="icon-eye active" id="eye-inactive">
+          <img src="./imgs/eye-active.svg" alt="eye active" class="icon-eye disabled" id="eye-active-password">
+        </div>
+      </div>
+
+      <a href="#" id="forgot-password">Forgotten password?</a>
+      <input type="button" value="Log In" class="button-input">
+
+      <div id="separation-or">
+        <span class="line"></span>
+        <p>OR</p>
+        <span class="line"></span>
+      </div>
+
+      <div id="login-others">
+        <img src="./imgs/facebook-app-logo-svgrepo-com.svg" alt="facebook">
+        <a href="#">Log in with Facebook</a>
+      </div>
+    </form>
+
+    <div id="register">
+      <span class="line"></span>
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+
+    <section id="app-install">
+      <span class="line"></span>
+      <p>Get the app.</p>
+      <div id="stores">
+        <img src="./imgs/get in google play.png" alt="google play" id="google-play">
+        <img src="./imgs/get in microsoft.png" alt="microsoft" id="microsoft">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="links">
+      <a href="#">Meta</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Jobs</a>
+      <a href="#">Help</a>
+      <a href="#">API</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Top Accounts</a>
+      <a href="#">Locations</a>
+      <a href="#">Instagram Lite</a>
+      <a href="#">Threads</a>
+      <a href="#">Contact Uploading & Non-Users</a>
+      <a href="#">Meta Verified</a>
+    </div>
+
+    <div id="language-credit">
+      <select name="select-language" id="languages">
+        <option value="en">English</option>
+        <option value="pt-br">Português (Brasil)</option>
+      </select>
+
+      <p>© 2023 Instagram from Meta. Designer by: LetzC</p>
+    </div>
+
+  </footer>
+
+  <script src="./index.js" defer></script>
+</body>
+
+</html>

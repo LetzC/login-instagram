@@ -1,0 +1,283 @@
+:root {
+  --background-gradient: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  --white: #fff;
+  --black: #000;
+  --blue-active: #405de6;
+  --blue-inactive: #5851db;
+  --gray: rgba(255, 255, 255, 0.541);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: var(--gray);
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  text-align: center;
+  justify-items: center;
+
+  background-color: #111111;
+
+  z-index: -1;
+}
+
+section p {
+  font-size: 1.3rem;
+}
+
+section .line {
+  margin: 4rem 0;
+}
+
+#stores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.9rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+#google-play {
+  width: 14rem;
+  height: 6rem;
+}
+
+#microsoft {
+  width: 11rem;
+  height: 4rem;
+}
+
+header {
+  grid-area: header;
+}
+
+#logo-instagram {
+  width: 18rem;
+  margin-top: 16rem;
+  cursor: pointer;
+}
+
+main {
+  grid-area: main;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 38rem;
+  height: 56rem;
+  padding: 3rem;
+
+  /* background-color: #1b1b1b80; */
+
+  border-radius: 2rem;
+}
+
+.icon-eye {
+  z-index: 1;
+  position: absolute;
+  transform: translate(-4.3rem, 0.3rem);
+  padding: 0.2rem;
+}
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+}
+#login input {
+  background: rgba(85, 84, 84, 0.445);
+}
+
+#login input:focus {
+  background: rgba(51, 51, 51, 0.445);
+  outline: none;
+  border: 1px solid rgba(85, 84, 84, 0.445);
+}
+
+input::placeholder {
+  color: var(--gray);
+}
+
+#password {
+  display: relative;
+}
+
+#password input {
+  display: relative;
+  z-index: 0;
+}
+
+#password img {
+  position: inline-block;
+  width: 3rem;
+  height: 3rem;
+  z-index: 1;
+}
+
+.button-input {
+  color: var(--white);
+  background-color: var(--blue-active);
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+.button-input:hover {
+  transition: 0.5s;
+  background-color: #3146ac;
+  color: rgb(197, 197, 197);
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--blue-active);
+}
+
+a:hover {
+  color: #546ad6;
+}
+
+#forgot-password {
+  margin-left: 20rem;
+}
+#separation-or,
+#login-others {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#separation-or .line {
+  width: 40%;
+}
+
+#separation-or p {
+  display: inline-block;
+  color: var(--white);
+  margin: 1.5rem 2rem;
+}
+
+.line {
+  display: inline-block;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--gray);
+}
+
+#login-others a {
+  font-size: 1.4rem;
+}
+
+#login-others img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+#register {
+  margin-top: 4rem;
+}
+
+#register .line {
+  margin-bottom: 4rem;
+}
+
+#register p {
+  font-size: 1.2rem;
+}
+
+footer {
+  grid-area: footer;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+#links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+#language-credit {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#language-credit p {
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: var(--gray);
+}
+
+select {
+  width: 7rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+option {
+  color: var(--black);
+  background-color: var(--gray);
+  font-size: 1.3rem;
+}
+
+.active {
+  display: inline-block;
+}
+
+.disabled {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  main {
+    width: 35rem;
+  }
+  #logo-instagram {
+    width: 16rem;
+    margin-top: 6rem;
+  }
+  #language-credit {
+    gap: 0;
+  }
+}
+
+.light {
+  background-color: aliceblue;
+}
