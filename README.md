@@ -1,6 +1,5 @@
 ## Table of contents
 
-- [Visão Geral - Português](#visaogeral)
 - [Overview - English](#overview)
 
 
