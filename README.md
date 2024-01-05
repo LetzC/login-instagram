@@ -2,6 +2,9 @@
 
 
 ## Visão Geral
+<img src="./imgs/cover.jpg">
+
+<p align="center">Redesign da página de login do Instagram na versão web.</p>
 
 ### Aprendizado
 Projeto que fiz de um redesign da página de login web do Instagram. A inspiração das cores veio da versão mobile do aplicativo. Alguns dos pontos que mais aprendi e aprimorei nesse projeto foram:
